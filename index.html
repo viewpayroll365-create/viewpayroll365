@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ViewPayroll365 — Payroll Outsourcing & HMRC Compliance</title>
+  <meta name="description" content="ViewPayroll365 Ltd — payroll outsourcing and HMRC compliance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<div class="container">
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <div class="logo">V</div>
+      <div>
+        <div style="font-weight:800">ViewPayroll365</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:2px">Payroll outsourcing</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">What We Offer</a></li>
+        <li><a href="who.html">Who We Serve</a></li>
+        <li><a href="why.html">Why ViewPayroll365</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="cta" href="contact.html">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" aria-expanded="false" id="mobileToggle">☰</button>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Payroll made simple — accurate, compliant, and available 365 days a year.</h1>
+      <p class="lead">ViewPayroll365 provides full payroll outsourcing — from payslips and HMRC FPS/EPS submissions to auto-enrolment and year-end returns.</p>
+      <div class="features" aria-hidden>
+        <span class="pill">HMRC FPS & EPS</span>
+        <span class="pill">Auto-enrolment</span>
+        <span class="pill">P60s & Year-End</span>
+        <span class="pill">Payslips & Reports</span>
+      </div>
+      <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="cta" href="contact.html">Start a Free Quote</a>
+        <a style="padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.02);font-weight:700" href="services.html">View Services</a>
+      </div>
+    </div>
+
+    <aside style="width:100%">
+      <div class="contact-box">
+        <h3>Quick contact</h3>
+        <p class="muted">Tell us about your payroll needs — we'll reply within one working day.</p>
+        <form id="contactForm">
+          <input name="company" placeholder="Company name" required>
+          <input name="name" placeholder="Contact name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <input name="phone" placeholder="Phone (optional)">
+          <select name="service">
+            <option value="payroll-processing">Payroll Processing</option>
+            <option value="hmrc-submission">HMRC Submission</option>
+            <option value="auto-enrolment">Pension & Auto-enrolment</option>
+            <option value="year-end">Year-end Services</option>
+          </select>
+          <textarea name="message" placeholder="Short message" rows="4" class="full"></textarea>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+        <div style="margin-top:10px;color:var(--muted);font-size:13px">Or email: <a href="mailto:viewpayroll365@gmail.com">viewpayroll365@gmail.com</a></div>
+      </div>
+    </aside>
+  </section>
+</main>
+<footer>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+    <div>
+      <strong>ViewPayroll365 Ltd</strong>
+      <div class="muted">Payroll outsourcing</div>
+    </div>
+    <div class="muted">© <span id="yr"></span> ViewPayroll365 Ltd — All rights reserved</div>
+  </div>
+</footer>
+</div>
+</body>
+</html>
