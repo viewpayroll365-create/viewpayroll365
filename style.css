@@ -9,12 +9,12 @@ body {
 }
 
 /* Navbar */
-.navbar {
+.container-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem; /* increased padding */
-  background: #fff;
+  padding: 1.5rem 3rem;
+  background-color: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
@@ -24,24 +24,36 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between logo and text */
+  gap: 15px;
 }
 
 .logo {
-  width: 100px; /* increased logo size */
+  width: 120px; /* larger logo */
   height: auto;
 }
 
-.brand-sub {
-  font-weight: 700;
-  font-size: 1.4rem; /* bigger brand text */
-  color: #0070f3; /* match your theme color */
+.brand-text {
+  display: flex;
+  flex-direction: column;
 }
 
+.brand-name {
+  font-weight: 700;
+  font-size: 1.8rem; /* larger company name */
+  color: #0070f3;
+}
+
+.brand-sub {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Navbar links */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
@@ -50,14 +62,18 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0070f3;
 }
 
 nav a.cta {
   background-color: #0070f3;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 6px;
-  transition: 0.3s;
 }
 
 nav a.cta:hover {
@@ -82,8 +98,8 @@ nav a.cta:hover {
 .about p {
   font-size: 1rem;
   text-align: justify;
-  color: #333;
   line-height: 1.8;
+  color: #333;
 }
 
 /* Footer */
