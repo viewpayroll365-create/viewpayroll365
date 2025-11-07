@@ -18,8 +18,8 @@
       <div class="brand">
         <img src="images/logo.png" alt="Company Logo" class="logo">
         <div>
-          <div style="font-weight:800">ViewPayroll365</div>
-          <div style="font-size:12px;color:var(--muted);margin-top:2px">Payroll outsourcing</div>
+          <div class="brand-name">ViewPayroll365</div>
+          <div class="brand-sub">Payroll outsourcing</div>
         </div>
       </div>
       <nav>
@@ -43,39 +43,37 @@
         <div class="hero-card">
           <h1>Payroll made simple — accurate, compliant, and available 365 days a year.</h1>
           <p class="lead">ViewPayroll365 provides full payroll outsourcing — from payslips and HMRC FPS/EPS submissions to auto-enrolment and year-end returns.</p>
-          <div class="features" aria-hidden>
+          <div class="features">
             <span class="pill">HMRC FPS & EPS</span>
             <span class="pill">Auto-enrolment</span>
             <span class="pill">P60s & Year-End</span>
             <span class="pill">Payslips & Reports</span>
           </div>
-          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+          <div class="hero-buttons">
             <a class="cta" href="contact.html">Start a Free Quote</a>
-            <a style="padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.02);font-weight:700" href="services.html">View Services</a>
+            <a class="secondary-btn" href="services.html">View Services</a>
           </div>
         </div>
 
-        <aside style="width:100%">
-          <div class="contact-box">
-            <h3>Quick contact</h3>
-            <p class="muted">Tell us about your payroll needs — we'll reply within one working day.</p>
-            <form id="contactForm">
-              <input name="company" placeholder="Company name" required>
-              <input name="name" placeholder="Contact name" required>
-              <input name="email" type="email" placeholder="Email" required>
-              <input name="phone" placeholder="Phone (optional)">
-              <select name="service">
-                <option value="payroll-processing">Payroll Processing</option>
-                <option value="hmrc-submission">HMRC Submission</option>
-                <option value="auto-enrolment">Pension & Auto-enrolment</option>
-                <option value="year-end">Year-end Services</option>
-              </select>
-              <textarea name="message" placeholder="Short message" rows="4" class="full"></textarea>
-              <button type="submit" class="btn">Send message</button>
-            </form>
-            <div style="margin-top:10px;color:var(--muted);font-size:13px">
-              Or email: <a href="mailto:viewpayroll365@gmail.com">viewpayroll365@gmail.com</a>
-            </div>
+        <aside class="contact-box">
+          <h3>Quick contact</h3>
+          <p class="muted">Tell us about your payroll needs — we'll reply within one working day.</p>
+          <form id="contactForm">
+            <input name="company" placeholder="Company name" required>
+            <input name="name" placeholder="Contact name" required>
+            <input name="email" type="email" placeholder="Email" required>
+            <input name="phone" placeholder="Phone (optional)">
+            <select name="service">
+              <option value="payroll-processing">Payroll Processing</option>
+              <option value="hmrc-submission">HMRC Submission</option>
+              <option value="auto-enrolment">Pension & Auto-enrolment</option>
+              <option value="year-end">Year-end Services</option>
+            </select>
+            <textarea name="message" placeholder="Short message" rows="4" class="full"></textarea>
+            <button type="submit" class="btn">Send message</button>
+          </form>
+          <div class="contact-email">
+            Or email: <a href="mailto:viewpayroll365@gmail.com">viewpayroll365@gmail.com</a>
           </div>
         </aside>
       </section>
@@ -83,7 +81,7 @@
 
     <!-- Footer -->
     <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="footer-content">
         <div>
           <strong>ViewPayroll365 Ltd</strong>
           <div class="muted">Payroll outsourcing</div>
