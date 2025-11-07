@@ -1,28 +1,29 @@
-/* Root Variables */
+/* =========================
+   Root Variables
+========================= */
 :root {
-  --bg: #f0f4f8;          
-  --card: #0e1114;
-  --muted: #9aa4ad;
+  --muted: #6b7280;
   --accent: #c41e2b;
-  --glass: rgba(255,255,255,0.03);
   --maxwidth: 1100px;
-
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color-scheme: dark;
 }
 
-/* Global Styles */
+/* =========================
+   Global Styles
+========================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body {
   height: 100%;
-  background-color: var(--bg);
+  background: linear-gradient(180deg, #e0f7ff, #ffffff); /* full page gradient */
   color: #0f1720;
   font-family: Arial, sans-serif;
 }
 a { color: inherit; text-decoration: none; }
 .container { max-width: var(--maxwidth); margin: 0 auto; padding: 28px; }
 
-/* Navbar */
+/* =========================
+   Navbar
+========================= */
 header {
   backdrop-filter: blur(6px);
   position: sticky;
@@ -34,21 +35,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   padding: 12px;
   border-radius: 12px;
 }
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.logo {
-  height: 50px;
-  width: auto;
-  display: block;
-  margin: 0;
-}
+.brand { display: flex; align-items: center; gap: 12px; }
+.logo { height: 50px; width: auto; display: block; margin: 0; }
 .brand-name { font-weight: 800; }
 .brand-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
@@ -64,8 +55,7 @@ nav a {
   color: var(--muted);
   font-weight: 600;
 }
-nav a:hover { color: #fff; background: var(--glass); }
-
+nav a:hover { color: #0f1720; background: rgba(0,0,0,0.05); }
 .cta {
   background: linear-gradient(90deg, var(--accent), #b11b25);
   padding: 8px 14px;
@@ -73,10 +63,12 @@ nav a:hover { color: #fff; background: var(--glass); }
   font-weight: 700;
 }
 
-/* Hero */
+/* =========================
+   Hero Section
+========================= */
 .hero { display: grid; grid-template-columns: 1fr 420px; gap: 24px; align-items: center; padding: 48px 0; }
 .hero-card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: rgba(255,255,255,0.8); /* light sheet background */
   padding: 28px;
   border-radius: 16px;
 }
@@ -84,7 +76,7 @@ h1 { font-size: 34px; line-height: 1.03; margin-bottom: 10px; }
 p.lead { color: var(--muted); margin-bottom: 18px; }
 .features { display: flex; gap: 12px; flex-wrap: wrap; }
 .pill {
-  background: rgba(255,255,255,0.02);
+  background: rgba(255,255,255,0.6);
   padding: 8px 12px;
   border-radius: 999px;
   font-weight: 600;
@@ -94,21 +86,23 @@ p.lead { color: var(--muted); margin-bottom: 18px; }
 .secondary-btn {
   padding: 8px 12px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255,255,255,0.6);
   font-weight: 700;
 }
 
-/* Contact Box */
+/* =========================
+   Contact Box
+========================= */
 .contact-box {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: rgba(255,255,255,0.8);
   padding: 20px;
   border-radius: 12px;
 }
 form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 form .full { grid-column: 1 / -1; }
 input, textarea, select {
-  background: #071014;
-  border: 1px solid rgba(255,255,255,0.03);
+  background: rgba(240, 244, 248, 0.9);
+  border: 1px solid rgba(0,0,0,0.1);
   padding: 12px;
   border-radius: 10px;
   color: #0f1720;
@@ -123,12 +117,31 @@ button.btn {
 }
 .contact-email { margin-top: 10px; font-size: 13px; color: var(--muted); }
 
-/* Footer */
-footer { margin-top: 36px; padding: 18px; border-radius: 12px; background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); }
+/* =========================
+   Cards / Services / Who / Reasons
+========================= */
+.card,
+.who .chip,
+.reason {
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: rgba(255,255,255,0.8);
+  padding: 18px;
+  border-radius: 12px;
+}
 .footer-content { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .muted { color: var(--muted); font-size: 15px; }
 
-/* Responsive */
+/* =========================
+   Mobile Responsiveness
+========================= */
 .mobile-toggle { display: none; }
 @media (max-width:880px){
   .hero { grid-template-columns: 1fr; }
