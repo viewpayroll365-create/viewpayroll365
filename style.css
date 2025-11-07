@@ -31,19 +31,20 @@ header {
   border-radius: 12px;
 }
 
-/* Brand and Logo */
+/* Brand and Logo with recommended size */
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .brand .logo {
-  height: 50px;        /* IDEAL logo size */
-  width: auto;
+  width: 400px;      /* Desktop recommended size */
+  height: 100px;
+  object-fit: contain;
   display: block;
 }
 .brand-sub {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--muted);
 }
@@ -109,9 +110,17 @@ footer {
   .hero { grid-template-columns: 1fr; }
   nav ul { display: none; }
   .mobile-toggle { display: block; }
+  .brand .logo {
+    width: 350px;   /* Tablet recommended size */
+    height: 75px;
+  }
+  .brand-sub { font-size: 14px; }
 }
 @media (max-width:480px){
-  .brand .logo { height: 35px; }  /* smaller on mobile */
+  .brand .logo {
+    width: 250px;   /* Mobile recommended size */
+    height: 50px;
+  }
   .brand-sub { font-size: 12px; }
   h1 { font-size: 28px; }
 }
