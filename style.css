@@ -39,18 +39,18 @@ header {
   flex-shrink: 0;  /* prevent stretching */
 }
 .brand .logo {
-  width: 400px;       /* desktop width */
+  width: 400px;       /* desktop logo width */
   max-width: 100%;    /* scales down on smaller screens */
-  height: auto;       /* keep aspect ratio */
+  height: auto;       /* maintains aspect ratio */
   object-fit: contain;
 }
 
 .brand-sub {
   font-size: 18px;
   font-weight: 600;
-  color: #6b7280;
+  color: #6b7280;   /* muted gray */
+  margin-left: 10px; /* spacing from logo */
 }
-
 /* Nav Menu */
 nav ul {
   display: flex;
