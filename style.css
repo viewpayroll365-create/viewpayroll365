@@ -67,3 +67,18 @@ footer{margin-top:36px;padding:18px;border-radius:12px;background:linear-gradien
 /* small */
 @media (max-width:480px){h1{font-size:28px}}
 .legal{color:var(--muted);font-size:13px}
+/* Logo style */
+.logo {
+  height: 80px;         /* adjust as needed */
+  width: auto;
+  display: block;
+  margin: 20px auto;    /* centers it horizontally */
+}
+
+/* Page background color */
+body {
+  background-color: #f0f4f8; /* light grey-blue background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
