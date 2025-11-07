@@ -30,13 +30,15 @@ header {
   padding: 12px;
   border-radius: 12px;
 }
+
+/* Brand and Logo */
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;           /* space between logo and text */
+  gap: 8px;
 }
 .brand .logo {
-  height: 40px;         /* comfortable size */
+  max-height: 40px;  /* small and comfortable size */
   width: auto;
   display: block;
 }
@@ -109,7 +111,7 @@ footer {
   .mobile-toggle { display: block; }
 }
 @media (max-width:480px){
-  .brand .logo { height: 30px; }
+  .brand .logo { max-height: 30px; }
   .brand-sub { font-size: 12px; }
   h1 { font-size: 28px; }
 }
