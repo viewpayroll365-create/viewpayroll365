@@ -31,17 +31,17 @@ header {
   border-radius: 12px;
 }
 
-/* Brand and Logo with 800x800px for desktop */
+/* Brand and Logo */
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .brand .logo {
-  width: 800px;      /* Desktop width */
-  height: 800px;     /* Desktop height */
+  width: 100%;
+  max-width: 800px; /* maximum desktop width */
+  height: auto;
   object-fit: contain;
-  display: block;
 }
 .brand-sub {
   font-size: 18px;
@@ -112,19 +112,8 @@ footer {
   .hero { grid-template-columns: 1fr; }
   nav ul { display: none; }
   .mobile-toggle { display: block; }
-
-  .brand .logo {
-    width: 400px;   /* Tablet width */
-    height: 400px;  /* Tablet height */
-  }
-  .brand-sub { font-size: 16px; }
 }
 
 @media (max-width:480px){
-  .brand .logo {
-    width: 250px;   /* Mobile width */
-    height: 250px;  /* Mobile height */
-  }
-  .brand-sub { font-size: 14px; }
   h1 { font-size: 28px; }
 }
