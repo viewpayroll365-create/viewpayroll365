@@ -39,12 +39,12 @@ header {
   flex-shrink: 0;  /* prevent stretching */
 }
 .brand .logo {
-  width: 400px;       /* desktop */
-  max-width: 100%;    /* responsive */
+  width: 400px;       /* desktop logo width */
+  max-width: 100%;    /* shrink on smaller screens */
   height: auto;
   object-fit: contain;
+  flex-shrink: 0;
 }
-
 .brand-sub {
   font-size: 18px;
   font-weight: 600;
