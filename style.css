@@ -33,18 +33,15 @@ header {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--muted);
+  gap: 10px;           /* space between logo and text */
 }
 .brand .logo {
-  height: 46px;
+  height: 40px;         /* comfortable size */
   width: auto;
   display: block;
 }
 .brand-sub {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--muted);
 }
@@ -111,4 +108,8 @@ footer {
   nav ul { display: none; }
   .mobile-toggle { display: block; }
 }
-@media (max-width:480px){ h1 { font-size: 28px; } }
+@media (max-width:480px){
+  .brand .logo { height: 30px; }
+  .brand-sub { font-size: 12px; }
+  h1 { font-size: 28px; }
+}
