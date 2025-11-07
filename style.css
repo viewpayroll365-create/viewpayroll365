@@ -1,4 +1,3 @@
-/* --- Root Variables --- */
 :root {
   --muted: #6b7280;
   --accent: #c41e2b;
@@ -6,38 +5,26 @@
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-/* --- Global Reset --- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 html, body {
   height: 100%;
-  background: linear-gradient(180deg, #e0f7ff, #ffffff);
+  background: linear-gradient(180deg, #e0f7ff, #ffffff); /* site background */
   color: #0f1720;
   font-family: Arial, sans-serif;
 }
+a { color: inherit; text-decoration: none; }
+.container { max-width: var(--maxwidth); margin: 0 auto; padding: 28px; }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.container {
-  max-width: var(--maxwidth);
-  margin: 0 auto;
-  padding: 28px;
-}
-
-/* --- Header & Navbar --- */
+/* Navbar */
 header {
   backdrop-filter: blur(6px);
   position: sticky;
   top: 0;
   z-index: 60;
   padding: 12px 0;
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
 }
 
 .navbar {
@@ -45,19 +32,18 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  border-radius: 12px;
 }
 
-/* --- Brand & Logo --- */
+/* Brand and Logo */
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-shrink: 0;
+  flex-shrink: 0;  /* prevent stretching */
 }
 
 .brand .logo {
-  width: 400px;       /* desktop width */
+  width: 400px;       /* desktop logo width */
   max-width: 100%;    /* scales on smaller screens */
   height: auto;       /* maintain aspect ratio */
   object-fit: contain;
@@ -69,26 +55,23 @@ header {
   color: var(--muted);
 }
 
-/* --- Nav Menu --- */
+/* Nav Menu */
 nav ul {
   display: flex;
   gap: 18px;
   align-items: center;
   list-style: none;
 }
-
 nav a {
   padding: 8px 12px;
   border-radius: 8px;
   color: var(--muted);
   font-weight: 600;
 }
-
 nav a:hover {
   color: #0f1720;
   background: rgba(0,0,0,0.05);
 }
-
 .cta {
   background: linear-gradient(90deg, var(--accent), #b11b25);
   padding: 8px 14px;
@@ -96,7 +79,7 @@ nav a:hover {
   font-weight: 700;
 }
 
-/* --- Hero Section --- */
+/* Hero Section */
 .hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -104,30 +87,14 @@ nav a:hover {
   align-items: center;
   padding: 48px 0;
 }
-
 .hero-card {
   background: rgba(255,255,255,0.8);
   padding: 28px;
   border-radius: 16px;
 }
-
-h1 {
-  font-size: 34px;
-  line-height: 1.03;
-  margin-bottom: 10px;
-}
-
-p.lead {
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
-.features {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
+h1 { font-size: 34px; line-height: 1.03; margin-bottom: 10px; }
+p.lead { color: var(--muted); margin-bottom: 18px; }
+.features { display: flex; gap: 12px; flex-wrap: wrap; }
 .pill {
   background: rgba(255,255,255,0.6);
   padding: 8px 12px;
@@ -135,14 +102,7 @@ p.lead {
   font-weight: 600;
   color: #0f1720;
 }
-
-.hero-buttons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 18px;
-}
-
+.hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
 .secondary-btn {
   padding: 8px 12px;
   border-radius: 10px;
@@ -150,50 +110,31 @@ p.lead {
   font-weight: 700;
 }
 
-/* --- Footer --- */
+/* Footer */
 footer {
   background: rgba(255,255,255,0.8);
   padding: 18px;
   border-radius: 12px;
 }
+.footer-content { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
+.muted { color: var(--muted); font-size: 15px; }
 
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
+/* Mobile toggle */
+.mobile-toggle { display: none; }
 
-.muted {
-  color: var(--muted);
-  font-size: 15px;
-}
-
-/* --- Mobile Toggle --- */
-.mobile-toggle {
-  display: none;
-}
-
-/* --- Responsive --- */
+/* Responsive */
 @media (max-width:880px){
-  .hero {
-    grid-template-columns: 1fr;
-  }
-  nav ul {
-    display: none;
-  }
-  .mobile-toggle {
-    display: block;
-  }
+  .hero { grid-template-columns: 1fr; }
+  nav ul { display: none; }
+  .mobile-toggle { display: block; }
 }
 
 @media (max-width:480px){
-  h1 {
-    font-size: 28px;
-  }
+  h1 { font-size: 28px; }
+
+  /* Logo and brand text for mobile */
   .brand .logo {
-    width: 250px;   /* mobile logo width */
+    width: 250px;   /* smaller on mobile */
   }
   .brand-sub {
     font-size: 16px;
