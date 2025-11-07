@@ -39,17 +39,16 @@ header {
   flex-shrink: 0;  /* prevent stretching */
 }
 .brand .logo {
-  width: 400px;       /* desktop logo width */
-  max-width: 100%;    /* scales down on smaller screens */
-  height: auto;       /* maintains aspect ratio */
+  width: 400px;       /* desktop width */
+  max-width: 100%;    /* scales on smaller screens */
+  height: auto;       /* maintain aspect ratio */
   object-fit: contain;
 }
 
 .brand-sub {
   font-size: 18px;
   font-weight: 600;
-  color: #6b7280;   /* muted gray */
-  margin-left: 10px; /* spacing from logo */
+  color: #6b7280;
 }
 /* Nav Menu */
 nav ul {
@@ -119,4 +118,13 @@ footer {
 @media (max-width:480px){
   h1 { font-size: 28px; }
   .brand .logo { width: 250px; }  /* mobile logo width */
+}
+/* --- Mobile responsiveness --- */
+@media (max-width:480px){
+  .brand .logo {
+    width: 250px;   /* smaller on mobile */
+  }
+  .brand-sub {
+    font-size: 16px;
+  }
 }
