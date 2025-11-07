@@ -38,8 +38,8 @@ header {
   gap: 10px;
 }
 .brand .logo {
-  width: 100%;
-  max-width: 400px; /* updated desktop logo size */
+  width: 400px;       /* fixed desktop width */
+  max-width: 100%;    /* scales down for smaller screens */
   height: auto;
   object-fit: contain;
 }
@@ -116,4 +116,5 @@ footer {
 
 @media (max-width:480px){
   h1 { font-size: 28px; }
+  .brand .logo { width: 250px; }  /* mobile logo */
 }
