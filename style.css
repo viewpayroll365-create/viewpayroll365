@@ -33,6 +33,7 @@ header {
 .brand {
   display: flex;
   align-items: center;
+  gap: 12px;
   font-size: 16px;
   font-weight: 600;
   color: var(--muted);
@@ -40,7 +41,7 @@ header {
 .brand .logo {
   height: 46px;
   width: auto;
-  margin-right: 12px;
+  display: block;
 }
 
 /* Nav Menu */
