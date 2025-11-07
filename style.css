@@ -21,6 +21,7 @@ body {
   z-index: 100;
 }
 
+/* Brand logo + text */
 .brand {
   display: flex;
   align-items: center;
@@ -39,7 +40,7 @@ body {
 
 .brand-name {
   font-weight: 700;
-  font-size: 1.8rem; /* larger company name */
+  font-size: 1.8rem;
   color: #0070f3;
 }
 
@@ -53,9 +54,16 @@ body {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   margin: 0;
   padding: 0;
+}
+
+nav li {
+  min-width: 120px; /* ensures links don’t shift */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
