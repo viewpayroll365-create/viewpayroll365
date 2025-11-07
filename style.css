@@ -57,7 +57,7 @@ header {
 }
 
 .brand .logo {
-  width: 400px;       /* desktop width */
+  width: 300px;       /* desktop width */
   max-width: 100%;    /* scales on smaller screens */
   height: auto;       /* maintain aspect ratio */
   object-fit: contain;
