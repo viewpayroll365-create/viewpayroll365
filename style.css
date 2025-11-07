@@ -35,15 +35,15 @@ header {
 .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 .brand .logo {
-  max-height: 40px;  /* small and comfortable size */
+  height: 50px;        /* IDEAL logo size */
   width: auto;
   display: block;
 }
 .brand-sub {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--muted);
 }
@@ -111,7 +111,7 @@ footer {
   .mobile-toggle { display: block; }
 }
 @media (max-width:480px){
-  .brand .logo { max-height: 30px; }
+  .brand .logo { height: 35px; }  /* smaller on mobile */
   .brand-sub { font-size: 12px; }
   h1 { font-size: 28px; }
 }
