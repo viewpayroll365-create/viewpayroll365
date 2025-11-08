@@ -152,6 +152,28 @@ nav a.cta:hover {
   padding: 0 1rem;
 }
 
+/* === Page layout === */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+
+.container-main {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Center the text inside sections */
+main h1, main h2, main p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main section {
+  margin-bottom: 3rem;
+}
+
 /* ===============================
    ABOUT SECTION
 ================================== */
@@ -168,37 +190,96 @@ nav a.cta:hover {
   line-height: 1.8;
   color: #333;
 }
-/* === Page layout === */
-main {
-  display: flex;
-  justify-content: center;
-  padding: 4rem 1.5rem;
-}
 
-.container-main {
-  max-width: 1200px;
-  width: 100%;
-}
-
-/* Center the text inside sections */
-main h1, main h2, main p {
-  text-align: center;
-}
-
-main section {
-  margin-bottom: 3rem;
-}
 /* ===============================
-   FOOTER
+   WHAT WE OFFER
 ================================== */
-footer {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #f0f0f0;
-  border-top: 1px solid #ddd;
-  margin-top: 3rem;
-  color: #333;
-  font-size: 0.95rem;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 112, 243, 0.1);
+}
+
+.card h3 {
+  color: #0070f3;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.muted {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ===============================
+   WHO WE SERVE
+================================== */
+.who {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.chip {
+  background-color: #0070f3;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.chip:hover {
+  background-color: #005bd1;
+}
+
+/* ===============================
+   WHY CHOOSE VIEWPAYROLL365
+================================== */
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.reason {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.reason:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 112, 243, 0.1);
+}
+
+.reason h3 {
+  color: #0070f3;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 /* ===============================
@@ -208,6 +289,7 @@ footer {
   color: #0070f3;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .contact-box {
@@ -215,6 +297,8 @@ footer {
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-box input,
@@ -249,17 +333,25 @@ footer {
   background: #005bb5;
 }
 
-.muted {
-  color: #666;
+/* ===============================
+   FOOTER
+================================== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+  color: #333;
   font-size: 0.95rem;
 }
 
-.legal {
-  font-size: 0.85rem;
-  color: #777;
-}@media (max-width: 768px) {
+/* ===============================
+   RESPONSIVE DESIGN
+================================== */
+@media (max-width: 768px) {
   .logo {
-    height: 40px;
+    height: 60px;
   }
   .brand-name {
     font-size: 1.5rem;
