@@ -1,35 +1,25 @@
-// script.js - Shared behaviors for all pages
 document.addEventListener('DOMContentLoaded', function() {
 
-  // =============================
-  // 1. Set current year in footer
-  // =============================
+  // Set current year
   const yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();
 
-  // =============================
-  // 2. Mobile navigation toggle
-  // =============================
+  // Mobile menu toggle
   const toggle = document.getElementById('mobileToggle');
   const menu = document.querySelector('nav ul');
 
   if (toggle && menu) {
     toggle.addEventListener('click', () => {
-      // Toggle ARIA attribute
+      menu.classList.toggle('active'); // toggle mobile menu
       const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!isExpanded));
-
-      // Toggle mobile menu visibility
-      menu.classList.toggle('active');
     });
   }
 
-  // =============================
-  // 3. Form submission placeholder
-  // =============================
+  // Form handler placeholder
   function handleForm(ev) {
     ev.preventDefault();
-    alert('Thank you! Your enquiry has been prepared locally. Replace this with a real form handler before publishing.');
+    alert('Thank you! Your enquiry has been prepared locally.');
     ev.target.reset();
   }
 
@@ -40,4 +30,3 @@ document.addEventListener('DOMContentLoaded', function() {
   if (quoteForm) quoteForm.addEventListener('submit', handleForm);
 
 });
-
