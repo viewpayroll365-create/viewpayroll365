@@ -285,6 +285,10 @@ footer {
 .about p {
   font-size: 1rem;
   color: #444;
-  line-height: 1.7;
-  text-align: center;
+  line-height: 1.8;
+  text-align: justify;       /* ← this aligns text evenly on both left & right sides */
+  text-justify: inter-word;  /* ← ensures proper word spacing for justification */
+  max-width: 900px;          /* ← limits line length for readability */
+  margin: 0 auto;            /* ← centers the block horizontally */
+  padding: 0 20px;           /* ← adds breathing space on smaller screens */
 }
