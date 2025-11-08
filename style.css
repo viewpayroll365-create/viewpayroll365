@@ -168,7 +168,26 @@ nav a.cta:hover {
   line-height: 1.8;
   color: #333;
 }
+/* === Page layout === */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
 
+.container-main {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Center the text inside sections */
+main h1, main h2, main p {
+  text-align: center;
+}
+
+main section {
+  margin-bottom: 3rem;
+}
 /* ===============================
    FOOTER
 ================================== */
