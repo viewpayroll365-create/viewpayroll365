@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!isExpanded));
 
-      // Toggle mobile menu
+      // Toggle mobile menu visibility
       menu.classList.toggle('active');
     });
   }
