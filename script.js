@@ -1,20 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Set year in footer
+  // Set current year
   const yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();
 
-  // Mobile menu toggle
+  // Mobile toggle
   const toggle = document.getElementById('mobileToggle');
   const menu = document.querySelector('nav ul');
 
   if (toggle && menu) {
     toggle.addEventListener('click', () => {
-      menu.classList.toggle('active'); // toggle mobile menu
-      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!isExpanded));
+      menu.classList.toggle('active'); // show/hide menu
+      toggle.setAttribute('aria-expanded', menu.classList.contains('active'));
     });
   }
+
+});
 
   // Form handler placeholder
   function handleForm(ev) {
