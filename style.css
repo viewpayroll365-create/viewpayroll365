@@ -357,9 +357,16 @@ footer {
     font-size: 1.5rem;
   }
 }
-/* Center only the "Get in touch" heading */
+/* Center entire Get in touch block */
+.contact-info {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;   /* 👈 centers all text inside */
+}
+
 .contact-info h3 {
-  text-align: center;
   color: #0070f3;
   margin-bottom: 0.8rem;
 }
