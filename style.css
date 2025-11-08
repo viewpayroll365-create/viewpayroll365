@@ -1,4 +1,6 @@
-/* General Body */
+/* ===============================
+   GENERAL STYLES
+================================== */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -8,34 +10,44 @@ body {
   line-height: 1.7;
 }
 
-/* Navbar */
+/* ===============================
+   NAVBAR
+================================== */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .container-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  padding: 1.2rem 3rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 /* Brand logo + text */
 .brand {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .logo {
-  width: 120px; /* larger logo */
-  height: auto;
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
+  line-height: 1.2;
 }
 
 .brand-name {
@@ -60,7 +72,6 @@ nav ul {
 }
 
 nav li {
-  min-width: 120px; /* ensures links don’t shift */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +82,7 @@ nav a {
   color: #333;
   font-weight: 500;
   transition: color 0.3s;
+  padding: 0.5rem 0.75rem;
 }
 
 nav a:hover {
@@ -82,20 +94,67 @@ nav a.cta {
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
+  transition: background-color 0.3s;
 }
 
 nav a.cta:hover {
   background-color: #005bb5;
 }
 
-/* Container */
+/* ===============================
+   MOBILE NAVBAR
+================================== */
+.mobile-toggle {
+  display: none;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container-navbar {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav a {
+    padding: 0.75rem 1rem;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* ===============================
+   CONTAINERS
+================================== */
 .container {
   max-width: 900px;
   margin: 3rem auto;
   padding: 0 1rem;
 }
 
-/* About Section */
+/* ===============================
+   ABOUT SECTION
+================================== */
 .about h1 {
   text-align: center;
   color: #0070f3;
@@ -110,11 +169,73 @@ nav a.cta:hover {
   color: #333;
 }
 
-/* Footer */
+/* ===============================
+   FOOTER
+================================== */
 footer {
   text-align: center;
   padding: 2rem 1rem;
   background-color: #f0f0f0;
   border-top: 1px solid #ddd;
   margin-top: 3rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   CONTACT PAGE STYLES
+================================== */
+#contact h2 {
+  color: #0070f3;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+  outline: none;
+  border-color: #0070f3;
+}
+
+.contact-box .btn {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-box .btn:hover {
+  background: #005bb5;
+}
+
+.muted {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.legal {
+  font-size: 0.85rem;
+  color: #777;
 }
