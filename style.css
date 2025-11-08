@@ -246,13 +246,13 @@ footer {
 /* ===============================
    RESPONSIVE / MOBILE
 ================================== */
-/* Mobile menu default (hidden) */
+/* Mobile menu default */
 @media (max-width: 768px) {
   nav ul {
-    display: none; /* hidden initially */
+    display: none; 
     flex-direction: column;
     position: absolute;
-    top: 64px; /* adjust for navbar height */
+    top: 64px; /* below navbar */
     right: 20px;
     width: 200px;
     background: #fff;
@@ -264,7 +264,7 @@ footer {
   }
 
   nav ul.active {
-    display: flex; /* shown when active */
+    display: flex;
   }
 
   .mobile-toggle {
@@ -279,7 +279,6 @@ footer {
     padding: 60px 20px;
   }
 }
-
 /* ===============================
    ABOUT PAGE
 ================================== */
