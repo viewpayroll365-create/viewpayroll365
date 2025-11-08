@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // =============================
-  // 3. Simple client-side form handler (placeholder)
+  // 3. Form submission placeholder
   // =============================
   function handleForm(ev) {
     ev.preventDefault();
@@ -40,3 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
   if (quoteForm) quoteForm.addEventListener('submit', handleForm);
 
 });
+
