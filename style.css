@@ -213,3 +213,23 @@ footer {
   text-align: center;
   color: #666;
 }
+
+/* ===============================
+   INDEX PAGE CENTRALIZATION
+================================== */
+#index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: 60px 20px;
+}
+
+#index h1,
+#index h2,
+#index p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
