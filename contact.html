@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
+
 <body>
- <!-- Navbar -->
+<!-- Navbar -->
 <header class="navbar">
   <div class="container-navbar">
     <div class="brand">
@@ -34,37 +35,53 @@
     <button class="mobile-toggle" aria-expanded="false" id="mobileToggle">☰</button>
   </div>
 </header>
-<main id="contact"><br>
-  <h2>Contact</h2><br>
-  <div style="display:grid;grid-template-columns:1fr 380px;gap:18px">
-    <div class="contact-box">
-      <h3>Request a Quote</h3>
-      <p class="muted">Complete the form and we'll prepare a tailored quote for your payroll volume and services.</p>
-      <form id="quoteForm">
-        <input name="company" placeholder="Company name" required>
-        <input name="email" type="email" placeholder="Email" required>
-        <input name="employees" placeholder="No. of employees" required>
-        <input name="budget" placeholder="Monthly budget (optional)">
-        <textarea name="details" placeholder="Anything else we should know?" rows="6" class="full"></textarea>
-        <button class="btn">Request Quote</button>
-      </form>
-    </div>
 
-    <aside style="padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))">
-      <h3>Get in touch</h3>
-      <div class="muted">ViewPayroll365 Ltd<br>Registered in the United Kingdom<br>Email: <a href="mailto:viewpayroll365@gmail.com">viewpayroll365@gmail.com</a></div>
-      <div style="margin-top:12px" class="legal">By contacting us you consent to ViewPayroll365 holding your information to respond to your enquiry.</div>
-    </aside>
+<!-- Contact Section -->
+<main id="contact">
+  <div class="container-main">
+    <h2>Contact</h2>
+    <p class="muted" style="text-align:center;">We’d love to hear from you. Whether you need payroll assistance or a custom quote, our team is ready to help.</p>
+
+    <div class="contact-sections">
+      <!-- Get in Touch Section -->
+      <section class="contact-info">
+        <h3>📞 Get in touch</h3>
+        <p class="muted">
+          ViewPayroll365 Ltd<br>
+          Registered in the United Kingdom<br>
+          Email: <a href="mailto:viewpayroll365@gmail.com">viewpayroll365@gmail.com</a><br>
+          Phone: +44 0000 000000 (optional placeholder)<br>
+        </p>
+        <p class="legal">By contacting us, you consent to ViewPayroll365 holding your information to respond to your enquiry.</p>
+      </section>
+
+      <!-- Request a Quote Section -->
+      <section class="contact-box">
+        <h3>🧾 Request a Quote</h3>
+        <p class="muted">Complete the form and we'll prepare a tailored quote for your payroll volume and services.</p>
+        <form id="quoteForm">
+          <input name="company" placeholder="Company name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <input name="employees" placeholder="No. of employees" required>
+          <input name="budget" placeholder="Monthly budget (optional)">
+          <textarea name="details" placeholder="Anything else we should know?" rows="6" class="full"></textarea>
+          <button class="btn">Request Quote</button>
+        </form>
+      </section>
+    </div>
   </div>
 </main>
+
+<!-- Footer -->
 <footer>
   <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-    <div>
-      <strong>ViewPayroll365 Ltd</strong>
-    </div>
+    <div><strong>ViewPayroll365 Ltd</strong></div>
     <div class="muted">© <span id="yr"></span> ViewPayroll365 Ltd — All rights reserved</div>
   </div>
 </footer>
-</div>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
