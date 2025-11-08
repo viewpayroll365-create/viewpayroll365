@@ -42,7 +42,7 @@ body {
 }
 
 .logo {
-  height: 64px; /* increased logo size */
+  height: 64px;
   width: auto;
   object-fit: contain;
 }
@@ -94,33 +94,51 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* === Main Container === */
-.container-main {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 0 20px;
+/* ===============================
+   MAIN PAGE CONTENT (INDEX)
+================================== */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 20px;
   text-align: center;
+  min-height: 80vh;
 }
 
-/* === Headings with Split Color Gradient === */
+.container-main {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* === Gradient Headings (Logo Colors) === */
 h1, h2, h3 {
   background: linear-gradient(90deg, #081d42 0%, #081d42 50%, #c2243d 50%, #c2243d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-h1 { font-size: 2.4rem; }
+h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.4rem; }
 
-/* === Service / Who / Why Grid Sections === */
-.grid, .reasons, .who {
+p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* === Section Layouts (Why / Who / What) === */
+.reasons, .who, .grid {
   display: grid;
   gap: 20px;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .grid {
@@ -145,10 +163,6 @@ h3 { font-size: 1.4rem; }
   margin-top: 6px;
 }
 
-.who {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
 .chip {
   padding: 10px 20px;
   border-radius: 20px;
@@ -157,7 +171,7 @@ h3 { font-size: 1.4rem; }
   font-weight: 600;
 }
 
-/* === Contact Page === */
+/* === CONTACT PAGE === */
 #contact {
   max-width: 1000px;
   margin: 60px auto;
@@ -214,22 +228,31 @@ footer {
   color: #666;
 }
 
-/* ===============================
-   INDEX PAGE CENTRALIZATION
-================================== */
-#index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 80vh;
-  padding: 60px 20px;
-}
+/* === Responsive Fixes === */
+@media (max-width: 768px) {
+  .container-navbar {
+    flex-wrap: wrap;
+  }
 
-#index h1,
-#index h2,
-#index p {
-  text-align: center;
-  margin-bottom: 1rem;
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  main {
+    padding: 60px 20px;
+  }
 }
