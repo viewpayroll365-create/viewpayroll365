@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-  height: 48px;
+  height: 70px;
   width: auto;
   object-fit: contain;
 }
@@ -238,4 +238,11 @@ footer {
 .legal {
   font-size: 0.85rem;
   color: #777;
+}@media (max-width: 768px) {
+  .logo {
+    height: 40px;
+  }
+  .brand-name {
+    font-size: 1.5rem;
+  }
 }
