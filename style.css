@@ -246,35 +246,32 @@ footer {
 /* ===============================
    RESPONSIVE / MOBILE
 ================================== */
+/* Mobile menu default (hidden) */
 @media (max-width: 768px) {
-  .container-navbar {
-    flex-wrap: wrap;
-  }
-
   nav ul {
-    display: none;  
+    display: none;  /* hidden initially */
     flex-direction: column;
-    width: 100%;
+    width: 200px;
     background: #fff;
-    border-top: 1px solid #eee;
-    margin-top: 1rem;
-    padding: 12px;
-    border-radius: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
     position: absolute;
-    right: 0;
-    top: 60px; 
+    top: 64px; /* adjust for navbar height */
+    right: 20px;
+    padding: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 999;
   }
 
   nav ul.active {
-    display: flex;  
+    display: flex;  /* show when active */
   }
 
   .mobile-toggle {
     display: block;
+    font-size: 1.8rem;
     background: none;
     border: none;
-    font-size: 1.8rem;
     cursor: pointer;
   }
 
