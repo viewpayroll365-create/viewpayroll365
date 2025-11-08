@@ -249,10 +249,10 @@ footer {
 /* Mobile menu default */
 @media (max-width: 768px) {
   nav ul {
-    display: none; 
+    display: none; /* hidden initially */
     flex-direction: column;
     position: absolute;
-    top: 64px; /* below navbar */
+    top: 64px;
     right: 20px;
     width: 200px;
     background: #fff;
@@ -263,8 +263,8 @@ footer {
     z-index: 999;
   }
 
-  nav ul.active {
-    display: flex;
+    nav ul.active {
+    display: flex; /* shown when active */
   }
 
   .mobile-toggle {
@@ -274,7 +274,7 @@ footer {
     border: none;
     cursor: pointer;
   }
-
+}
   main {
     padding: 60px 20px;
   }
