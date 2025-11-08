@@ -1,4 +1,6 @@
-/* === Global Reset === */
+/* ===============================
+   GLOBAL RESET
+================================== */
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +17,13 @@ body {
   flex-direction: column;
 }
 
-/* === Navbar === */
+/* ===============================
+   NAVBAR
+================================== */
 .navbar {
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -34,7 +38,7 @@ body {
   max-width: 1200px;
 }
 
-/* === Brand Logo and Text === */
+/* Brand Logo + Text */
 .brand {
   display: flex;
   align-items: center;
@@ -67,7 +71,7 @@ body {
   color: #666;
 }
 
-/* === Navigation Menu === */
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -85,7 +89,7 @@ nav a:hover {
   color: #c2243d;
 }
 
-/* === Mobile Menu Toggle === */
+/* Mobile Menu Toggle */
 .mobile-toggle {
   display: none;
   font-size: 1.8rem;
@@ -95,24 +99,30 @@ nav a:hover {
 }
 
 /* ===============================
-   MAIN PAGE CONTENT (INDEX)
+   INDEX PAGE CONTENT
 ================================== */
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 80px 20px;
   text-align: center;
   min-height: 80vh;
+  padding: 80px 20px;
 }
 
 .container-main {
   max-width: 900px;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* === Gradient Headings (Logo Colors) === */
+/* Headings Gradient */
 h1, h2, h3 {
   background: linear-gradient(90deg, #081d42 0%, #081d42 50%, #c2243d 50%, #c2243d 100%);
   -webkit-background-clip: text;
@@ -126,15 +136,21 @@ h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.4rem; }
 
-p {
+/* Paragraphs */
+main p {
   font-size: 1rem;
   color: #444;
   margin-bottom: 1.5rem;
-  text-align: center;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* === Section Layouts (Why / Who / What) === */
-.reasons, .who, .grid {
+/* Section Layouts (Why / Who / What) */
+.grid, .reasons, .who {
   display: grid;
   gap: 20px;
   justify-content: center;
@@ -149,7 +165,7 @@ p {
   background: #fff;
   padding: 22px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
@@ -171,53 +187,9 @@ p {
   font-weight: 600;
 }
 
-/* === CONTACT PAGE === */
-#contact {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.contact-box {
-  background: #fff;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.btn {
-  background: linear-gradient(90deg, #081d42, #c2243d);
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
-aside {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.05));
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-/* === Footer === */
+/* ===============================
+   FOOTER
+================================== */
 footer {
   margin-top: auto;
   background: #fff;
@@ -228,7 +200,9 @@ footer {
   color: #666;
 }
 
-/* === Responsive Fixes === */
+/* ===============================
+   RESPONSIVE
+================================== */
 @media (max-width: 768px) {
   .container-navbar {
     flex-wrap: wrap;
@@ -255,39 +229,4 @@ footer {
   main {
     padding: 60px 20px;
   }
-}
-/* === About Page Section === */
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 80vh;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about .container {
-  max-width: 900px;
-  width: 100%;
-}
-
-.about h1 {
-  background: linear-gradient(90deg, #081d42 0%, #081d42 50%, #c2243d 50%, #c2243d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.about p {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
-  line-height: 1.8;
-  color: #444;
-  text-align: justify;
-  text-justify: inter-word;
 }
