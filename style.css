@@ -9,14 +9,13 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #081d42 0%, #c2243d 100%);
+  background: linear-gradient(135deg, #e8ecf7 0%, #fde9ec 100%); /* light navy → light red */
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 /* ===============================
    NAVBAR
 ================================== */
@@ -332,7 +331,7 @@ nav a:hover {
 }
 
 p, .muted {
-  color: #f5f5f5;
+  color: #333;
 }
 
 h1, h2, h3 {
