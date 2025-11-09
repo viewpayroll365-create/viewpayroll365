@@ -184,6 +184,14 @@ p {
 }
 
 /* Who We Serve same as What We Offer */
+.who {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .who .card {
   background: #fff;
   color: #111;
