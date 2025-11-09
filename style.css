@@ -10,7 +10,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #081d42 0%, #c2243d 100%);
-  color: #fff;
+  color: #333;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@ body {
 ================================== */
 .navbar {
   width: 100%;
-  background-color: #fff;
+  background-color: #333;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
@@ -68,7 +68,7 @@ body {
 .brand-sub {
   font-weight: 500;
   font-size: 1rem;
-  color: #ddd;
+  color: #666;
 }
 
 /* Navigation */
@@ -80,7 +80,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -134,7 +134,7 @@ h3 { font-size: 1.4rem; }
 /* Paragraphs */
 p {
   font-size: 1rem;
-  color: #eee;
+  color: #444;
   margin-bottom: 1.5rem;
   line-height: 1.8;
   text-align: justify;
@@ -157,7 +157,7 @@ p {
 }
 
 .card, .reason {
-  background: #fff;
+  background: #333;
   padding: 22px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -169,7 +169,7 @@ p {
 }
 
 .muted {
-  color: #ddd;
+  color: #666;
   font-size: 0.95rem;
   margin-top: 6px;
 }
@@ -178,7 +178,7 @@ p {
   padding: 10px 20px;
   border-radius: 20px;
   background: linear-gradient(90deg, #081d42, #c2243d);
-  color: #fff;
+  color: #333;
   font-weight: 600;
 }
 
@@ -193,7 +193,7 @@ p {
 }
 
 .contact-box {
-  background: #fff;
+  background: #333;
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -203,14 +203,14 @@ input, textarea {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #666;
   border-radius: 8px;
   font-size: 1rem;
 }
 
 .btn {
   background: linear-gradient(90deg, #081d42, #c2243d);
-  color: #fff;
+  color: #333;
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
@@ -235,12 +235,12 @@ aside {
 ================================== */
 footer {
   margin-top: auto;
-  background: #fff;
+  background: #333;
   padding: 20px 40px;
   box-shadow: 0 -1px 6px rgba(0,0,0,0.05);
   font-size: 0.9rem;
   text-align: center;
-  color: #ddd;
+  color: #666;
 }
 
 /* ===============================
@@ -255,8 +255,8 @@ footer {
     top: 64px;
     right: 20px;
     width: 200px;
-    background: #fff;
-    border: 1px solid #eee;
+    background: #333;
+    border: 1px solid #444;
     border-radius: 8px;
     padding: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -308,7 +308,7 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
   line-height: 1.8;
-  color: #eee;
+  color: #444;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -320,7 +320,7 @@ footer {
 }
 /* === Fix text & link colors for dark background === */
 nav a {
-  color: #fff;
+  color: #333;
 }
 
 nav a:hover {
@@ -328,7 +328,7 @@ nav a:hover {
 }
 
 .brand-sub {
-  color: #eee;
+  color: #444;
 }
 
 p, .muted {
@@ -336,6 +336,6 @@ p, .muted {
 }
 
 h1, h2, h3 {
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: #333;
   background: none;
 }
