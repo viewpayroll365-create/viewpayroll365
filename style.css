@@ -68,7 +68,7 @@ body {
 .brand-sub {
   font-weight: 500;
   font-size: 1rem;
-  color: #666;
+  color: #ddd;
 }
 
 /* Navigation */
@@ -80,7 +80,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -134,7 +134,7 @@ h3 { font-size: 1.4rem; }
 /* Paragraphs */
 p {
   font-size: 1rem;
-  color: #444;
+  color: #eee;
   margin-bottom: 1.5rem;
   line-height: 1.8;
   text-align: justify;
@@ -169,7 +169,7 @@ p {
 }
 
 .muted {
-  color: #666;
+  color: #ddd;
   font-size: 0.95rem;
   margin-top: 6px;
 }
@@ -240,7 +240,7 @@ footer {
   box-shadow: 0 -1px 6px rgba(0,0,0,0.05);
   font-size: 0.9rem;
   text-align: center;
-  color: #666;
+  color: #ddd;
 }
 
 /* ===============================
@@ -308,7 +308,7 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
   line-height: 1.8;
-  color: #444;
+  color: #eee;
   text-align: justify;
   text-justify: inter-word;
 }
