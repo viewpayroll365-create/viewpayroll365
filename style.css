@@ -156,10 +156,12 @@ p {
 }
 
 .card, .reason {
-  background: #333;
+  background: #fff;
+  color: #222;
+  border: 1px solid #eee; /* subtle outline */
   padding: 22px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
 
