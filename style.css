@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #e8ecf7 0%, #fde9ec 100%); /* light navy → light red */
+  background: #fde2e2; /* light cherry red */
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
