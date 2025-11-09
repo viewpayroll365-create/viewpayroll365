@@ -318,3 +318,24 @@ footer {
   backdrop-filter: blur(6px);
   border-radius: 10px;
 }
+/* === Fix text & link colors for dark background === */
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #ffd6d6; /* soft pink hover */
+}
+
+.brand-sub {
+  color: #eee;
+}
+
+p, .muted {
+  color: #f5f5f5;
+}
+
+h1, h2, h3 {
+  -webkit-text-fill-color: #fff;
+  background: none;
+}
